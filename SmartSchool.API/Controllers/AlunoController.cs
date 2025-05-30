@@ -78,7 +78,7 @@ namespace SmartSchool.API.Controllers
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
-            return Ok(aluno);
+            return Ok();
         }
 
     }
