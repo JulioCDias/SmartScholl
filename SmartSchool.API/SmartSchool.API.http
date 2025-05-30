@@ -1,6 +1,6 @@
 @SmartSchool.API_HostAddress = http://localhost:5084
 
-GET {{SmartSchool.API_HostAddress}}/weatherforecast/
+GET {{SmartSchool.API_HostAddress}}/api/aluno
 Accept: application/json
 
 ###
