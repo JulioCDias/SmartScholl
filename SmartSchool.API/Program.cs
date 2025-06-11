@@ -1,7 +1,11 @@
+using Microsoft.EntityFrameworkCore;
+using SmartSchool.API.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
+builder.Services.AddDbContext<DataContext>(context => context.UseSqlite(connectionString: builder.Configuration.GetConnectionString("DefaultConnection")));
 builder.Services.AddControllers();
 builder.Services.AddOpenApi();
 
